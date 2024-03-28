@@ -1,15 +1,18 @@
+'use client';
+import { useUIStore } from "@/components/store";
 import { titleFont } from "@/config/fonts"
 import Link from "next/link"
 import { HiOutlineMagnifyingGlassCircle, HiOutlineShoppingCart } from "react-icons/hi2"
 
 
 export const TopMenu = () => {
+  const SideMenuOpen = useUIStore(state => state.openSideMenu);
+
   return (
     <nav className="flex px-5 justify-between items-center w-full">
         <div>
             <Link href="/">
                 <span className={`${ titleFont.className} antialiased font-bold`}>Shop</span>
-                <span></span>
             </Link>
         </div>
 
@@ -33,7 +36,7 @@ export const TopMenu = () => {
             </div>
           </Link>
 
-          <button className="m-2 p-2 rounded-md transition-all hover:bg-gray-200 hover:text-black">
+          <button onClick={SideMenuOpen} className="m-2 p-2 rounded-md transition-all hover:bg-gray-200 hover:text-black">
             Menu
           </button>
         </div>
