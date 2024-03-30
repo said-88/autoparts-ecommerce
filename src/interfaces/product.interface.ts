@@ -1,17 +1,19 @@
 export interface SeedProduct {
-    // id: string;
+    id: string;
     description: string;
     images: string[];
     inStock: number;
     price: number;
-    sizes: ValidSize[];
+    brand: string;
+    productNumber: string;
     slug: string;
-    tags: string[];
+    compatibleCarModels: string[];
     title: string;
-    type: ValidType;
-    category: ValidCategory;
+    type: string;
+    category: {
+        id: string, 
+        name: string
+    };
 }
 
 export type ValidCategory = 'amortiguadores'|'frenos'|'filtros';
-export type ValidSize = 'XS'|'S'|'M'|'L'|'XL'|'XXL'|'XXXL';
-export type ValidType = 'shirts'|'pants'|'hoodies'|'hats';

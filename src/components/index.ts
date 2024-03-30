@@ -7,6 +7,9 @@ export * from './ui/title/Title';
 export * from './ui/side-menu/SideMenu';
 export * from './ui/carousel/carousel';
 export * from './ui/card/card';
+export * from './ui/button/button';
+export * from './ui/pagination/pagination';
+export * from './ui/pagination/PaginationItems';
 
 export * from './products/product-grid/ProductGrid';
 export * from './products/product-grid/ProductGridItem';

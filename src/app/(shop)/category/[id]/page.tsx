@@ -1,21 +1,28 @@
-import { ProductGrid, Title } from "@/components";
-import { ValidCategory } from "@/interfaces";
-import { initialData } from "@/seed/seed";
-import { notFound } from "next/navigation";
+import { getPaginationProducts } from "@/actions";
+import { PaginationItems, ProductGrid, Title } from "@/components";
+import { Category } from "@prisma/client";
+import { redirect } from "next/navigation";
 
 interface Props {
     params: {
-        id: ValidCategory;
+        id: string;
+    },
+    searchParams: {
+        page?: string;
     }
 }
 
-const SeedProducts = initialData.products;
-
-export default function CategoryId({ params }: Props) {
+export default async function CategoryId({ params, searchParams }: Props) {
     const { id } = params;
-    const products = SeedProducts.filter((product) => product.category === id);
 
-    const labels: Record<ValidCategory, string> = {
+    const page = searchParams.page ? parseInt(searchParams.page) : 1;
+    const { products, currentPage, totalPages } = await getPaginationProducts({ page, categoryId: id as Category['name']});
+
+    if (products.length === 0) {
+        redirect(`/category/${ id }`);
+    }
+
+    const labels: Record<string, string> = {
         'amortiguadores': 'Amortiguación',
         'frenos': 'Frenos',
         'filtros': 'Filtros'
@@ -32,6 +39,8 @@ export default function CategoryId({ params }: Props) {
           className='mb-10'
         />
         <ProductGrid products={products} />
+
+        <PaginationItems totalPages={totalPages}/>
       </>
     );
 }

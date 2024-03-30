@@ -26,7 +26,7 @@ export const ProductGridItem = ({product}: Props) => {
         src={`/products/${displayImage}`}
         alt={product.title}
         width={500}
-        height={500}
+        height={300}
         priority={true}
         className="object-cover w-full"
         onMouseEnter= {handleMouseEnter}
