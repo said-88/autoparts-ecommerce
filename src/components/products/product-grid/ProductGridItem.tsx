@@ -27,8 +27,9 @@ export const ProductGridItem = ({product}: Props) => {
         alt={product.title}
         width={500}
         height={300}
+        style={{ height: 'auto'}}
         priority={true}
-        className="object-cover w-full"
+        className="object-cover"
         onMouseEnter= {handleMouseEnter}
         onMouseLeave= {handleMouseLeave}
       />

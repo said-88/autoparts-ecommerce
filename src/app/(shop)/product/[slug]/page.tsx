@@ -1,7 +1,9 @@
+export const revalidate = 604800; // 7 days
 import { QuantitySelector, SlideShow } from "@/components";
+import { getProductBySlug } from "@/actions";
 import { titleFont } from "@/config/fonts";
-import { initialData } from "@/seed/seed";
 import { notFound } from "next/navigation";
+import { AddToCart } from "./ui/AddToCart";
 
 interface Props {
     params: {
@@ -9,13 +11,14 @@ interface Props {
     }
 }
 
-export default function Product({ params }: Props) {
+export default async function Product({ params }: Props) {
     const { slug } = params;
-    const product = initialData.products.find((product) => product.slug === slug);
-
+    const product = await getProductBySlug(slug);
+    
     if (!product) {
         return notFound();
     }
+
     return (
         <div className="mt-5 mb-20 grid md:grid-cols-3 gap-3">
             {/* Slide */}
@@ -29,23 +32,19 @@ export default function Product({ params }: Props) {
             {/* Detail */}
             <div className="col-span-1 px-5 md:mt-10">
                 <h1 className={`${titleFont.className} antialiased font-bold text-xl`}>
+                  Stock: {product.inStock}
+                </h1>
+                <h1 className={`${titleFont.className} antialiased font-bold text-xl`}>
                     {product.title}
                 </h1>
                 <p className="text-lg mb-5">HNL{ product.price }</p>
 
-                {/*  Selector */}
-                {/* Quantity Selector */}
-                <QuantitySelector quantity={1} />
-                
-                <button className="p-3 rounded my-5 bg-slate-200 ">
-                Agregar al carrito
-                </button>
+                <AddToCart product={ product }/>
 
                 {/* Description */}
                 <h3 className="font-bold text-sm">Descripción</h3>
                 <p className="font-light">{ product.description }</p>
-            </div>
-         
+            </div>    
         </div>
     );
 }

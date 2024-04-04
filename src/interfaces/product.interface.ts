@@ -17,3 +17,12 @@ export interface SeedProduct {
 }
 
 export type ValidCategory = 'amortiguadores'|'frenos'|'filtros';
+
+export interface CartProduct {
+    id: string;
+    quantity: number;
+    slug: string;
+    title: string;
+    price: number;
+    image: string;
+}
