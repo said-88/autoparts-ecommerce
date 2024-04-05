@@ -15,6 +15,8 @@ interface State {
         total: number;
         itemsInCart: number;
       };
+    
+    clearCart: () => void;
 }
 
 export const useCartStore = create<State, [["zustand/persist", State]]>(
@@ -88,7 +90,11 @@ export const useCartStore = create<State, [["zustand/persist", State]]>(
                 const { cart } = get();
                 const updatedCart = cart.filter( (cartProduct) => cartProduct.id !== product.id );
                 set({ cart: updatedCart });
-            }
+            },
+            
+            clearCart: () => {
+                set({ cart: [] });
+            },
         }),
         {
             name: 'cart-storage'
