@@ -201,5 +201,55 @@ export const initialData: SeedData = {
             title: "RIDEX 402B0624 Juego de Pastillas de Freno",
             category: 'frenos'
         },
+        {
+            description: "Tipo de filtro: Filtro enroscable, Código de motor: X14XE, X16XEL, X16XEL, Y16XE, Y22XE, Año de construcción desde: 09 / 1985, 10 / 1985, Año de construcción hasta: 01 / 1998, 08 / 1999, 09 / 2000, Altura [mm]: 86.5, Medida de rosca: M 18 X 1.5 - 6H, Diámetro int. 2[mm]: 71, 62, Diámetro [mm]: 76.5.",
+            images: [
+                'https://media.autodoc.de/360_photos/12901106/h-preview.jpg',
+                'https://cdn.autodoc.de/thumb?id=12901106&m=0&n=0&lng=es&rev=94077829',
+                'https://cdn.autodoc.de/thumb?id=12901106&m=0&n=2&lng=es&rev=94077829',
+            ],
+            inStock: 27,
+            price: 4.03,
+            brand: 'FILTRON',
+            productNumber: 'OP 570T',
+            slug: "filtron-op-570t",
+            type: 'enroscable',
+            compatibleCarModels: ['usuzu','opel','vauxhall'],
+            title: "FILTRON OP 570T Filtro de Aceite",
+            category: 'filtros'
+        },
+        {
+            description: "Lado de montaje: ASHIKA 61-01-198 Eje trasero, Diámetro [mm]: 239.3, Tipo de disco de frenos: macizo, Altura [mm]: 41.1, Espesor de disco de frenos [mm]: 7.1, Número de taladros: 4, Corona de agujeros - Ø [mm]: 61, Espesor mínimo [mm]: 6.",
+            images: [
+                'https://cdn.autodoc.de/thumb?id=10023509&m=0&n=0&lng=es&rev=94077829',
+                'https://cdn.autodoc.de/thumb?id=10023509&m=0&n=1&lng=es&rev=94077829',
+            ],
+            inStock: 30,
+            price: 20.91,
+            brand: 'ASHIKA',
+            productNumber: '61-01-198',
+            slug: "ashika-61-01-198",
+            type: 'macizo',
+            compatibleCarModels: ['nisssan'],
+            title: "ASHIKA 61-01-198 Disco de Freno",
+            category: 'frenos'
+        },
+        {
+            description: "Sistema de amortiguadores: Bitubular, Tipo de amortiguador: Amortiguador telescópico, Tipo de sujeción de amortiguador: Anillo superior, Anillo inferior, Longitud máxima [mm]: 556, Longitud mínima [mm]: 340.",
+            images: [
+                'https://media.autodoc.de/360_photos/15185699/h-preview.jpg',
+                'https://cdn.autodoc.de/thumb?id=15185699&m=1&n=0&lng=es&rev=94077829',
+                'https://cdn.autodoc.de/thumb?id=15185699&m=0&n=1&lng=es&rev=94077829',
+            ],
+            inStock: 10,
+            price: 30.07,
+            brand: 'RIDEX',
+            productNumber: '854S2335',
+            slug: "ridex-854S2335",
+            type: 'presión de gas',
+            compatibleCarModels: ['toyota'],
+            title: "RIDEX 854S2335 Amortiguador",
+            category: 'amortiguadores'
+        },
     ]
 }
