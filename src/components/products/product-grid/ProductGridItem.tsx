@@ -27,9 +27,13 @@ export const ProductGridItem = ({product}: Props) => {
         alt={product.title}
         width={500}
         height={300}
-        style={{ height: 'auto'}}
+        objectFit="cover"
+        style={{
+          width: "90%",
+          height: "400px",
+        }}
         priority={true}
-        className="object-cover"
+        className="rounded border-2 border-gray-200 hover:border-blue-500 transition-all cursor-pointer"
         onMouseEnter= {handleMouseEnter}
         onMouseLeave= {handleMouseLeave}
       />
@@ -39,7 +43,7 @@ export const ProductGridItem = ({product}: Props) => {
         <Link className="hover:text-blue-500" href={`/product${product.slug}`}>
           {product.title}
         </Link>
-        <span className="font-bold">HNL { product.price }</span>
+        <span className="font-bold">L{ product.price }</span>
       </div>
     </div>
   )

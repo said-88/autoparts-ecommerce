@@ -12,23 +12,22 @@ interface Props {
 
 export default async function Home({ searchParams }: Props) {
   const page = searchParams.page ? parseInt(searchParams.page) : 1;
-  const { products, currentPage, totalPages } = await getPaginationProducts({page});
-  
+  const { products, currentPage, totalPages } = await getPaginationProducts({ page });
+
   if (products.length === 0) {
     redirect('/');
   }
 
   return (
     <>
-      <Title 
+      <Title
         title="Tienda"
         subtitle="Todos los productos"
         className='mb-10'
       />
       <ProductGrid products={products} />
-      <div className='m-5'>
-        <PaginationItems totalPages={ totalPages }/>
-      </div>
+
+      <PaginationItems totalPages={totalPages} />
     </>
   )
 }

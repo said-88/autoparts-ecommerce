@@ -10,6 +10,7 @@ export * from './ui/card/card';
 export * from './ui/button/button';
 export * from './ui/pagination/pagination';
 export * from './ui/pagination/PaginationItems';
+export * from './ui/footer/Footer';
 
 export * from './products/product-grid/ProductGrid';
 export * from './products/product-grid/ProductGridItem';

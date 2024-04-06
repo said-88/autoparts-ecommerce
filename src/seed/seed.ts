@@ -50,7 +50,7 @@ export const initialData: SeedData = {
     categories: ['amortiguadores','frenos','filtros'],
     products: [
         {
-            description: "Introducing the Tesla Chill Collection. The amortiguadores’s Chill Crew Neck Sweatshirt has a premium, heavyweight exterior and soft fleece interior for comfort in any season. The sweatshirt features a subtle thermoplastic polyurethane T logo on the chest and a Tesla frenosrdmark below the back collar. Made from 60% cotton and 40% recycled polyester.",
+            description: "Altura [mm]: 377.0, Diámetro 4 [mm]: 138.0, Diámetro 3 [mm]: 8.5, Diámetro [mm]: 198.2, Diám. int. 2[mm]: 103, 104, Peso neto [g]: 1708, long. de embalaje [cm]: 20.0, Ancho de embalaje [cm]: 20, h embalaje [cm]: 39. Construido con precisión para cumplir con los estándares de calidad y rendimiento exigidos por la industria automotriz, el filtro de aire MAHLE ORIGINAL LX 265 garantiza un flujo de aire óptimo hacia el motor, lo que contribuye a un funcionamiento más suave y eficiente. Además, ayuda a proteger el motor contra el desgaste prematuro y la acumulación de residuos, lo que puede prolongar la vida útil del motor y mejorar su rendimiento general.",
             images: [
                 'mahle-original-lx-265.jpg',
                 'mahle-original-lx-265-2.jpg',
@@ -67,7 +67,7 @@ export const initialData: SeedData = {
             category: 'filtros',
         },
         {
-            description: "The amortiguadores's Quilted Shirt Jacket features a uniquely fit, quilted design for warmth and mobility in cold weather seasons. With an overall street-smart aesthetic, the jacket features subtle silicone injected Tesla logos below the back collar and on the right sleeve, as well as custom matte metal zipper pulls. Made from 87% nylon and 13% polyurethane.",
+            description: "Altura [mm]: 382, Altura 1 [mm]: 383, Diámetro 4 [mm]: 161, 160, Diámetro 3 [mm]: 10,5, Diámetro [mm]: 228, Diám. int. 2[mm]: 116, Peso neto [g]: 2250, long. de embalaje [cm]: 23, Ancho de embalaje [cm]: 23. Este filtro de aire está diseñado para capturar eficazmente partículas de polvo, suciedad y otros contaminantes presentes en el aire que ingresa al motor. Su diseño preciso y su construcción robusta garantizan un flujo de aire óptimo hacia el motor, lo que contribuye a un funcionamiento suave y eficiente del vehículo. Cumple con los más altos estándares de calidad y rendimiento exigidos por la industria automotriz.",
             images: [
                 'mahle-original-lx-227.jpg',
                 'mahle-original-lx-227-2.jpg',
@@ -83,7 +83,7 @@ export const initialData: SeedData = {
             category: 'filtros'
         },
         {
-            description: 'The amortiguadores’s Quilted Shirt Jacket features a uniquely fit, quilted design for warmth and mobility in cold weather seasons. With an overall street-smart aesthetic, the jacket features subtle silicone injected Tesla logos below the back collar and on the right sleeve, as well as custom matte metal zipper pulls. Made from 87% nylon and 13% polyurethane.',
+            description: 'Altura [mm]: 85, Rosca empalme: 3/4, Diámetro [mm]: 76. El filtro RIDEX 700028 está diseñado para adaptarse a una amplia gama de modelos de vehículos específicos. Se fabrica de acuerdo con los estándares y especificaciones de los fabricantes de automóviles para garantizar un ajuste perfecto y una funcionalidad óptima. Utiliza una tecnología de filtración avanzada para capturar partículas de suciedad, sedimentos y otros contaminantes presentes en el aceite del motor. El diseño del filtro está optimizado para proporcionar una filtración eficiente sin restringir el flujo de aceite, lo que asegura un adecuado suministro de lubricación al motor.',
             images: [
                 'ridex-7O0028.jpg',
                 'ridex-7O0028-2.jpg',
@@ -100,7 +100,7 @@ export const initialData: SeedData = {
             category: 'filtros'
         },
         {
-            description: "Introducing the Tesla Raven Collection. The amortiguadores's Raven Lightweight Zip Up Bomber has a premium, modern silhouette made from a sustainable bamboo cotton blend for versatility in any season. The hoodie features subtle thermoplastic polyurethane Tesla logos on the left chest and below the back collar, a concealed chest pocket with custom matte zipper pulls and a french terry interior. Made from 70% bamboo and 30% cotton.",
+            description: "Lado de montaje: Eje trasero, Tipo de amortiguador: Presión de gas, Tipo de sujeción de amortiguador: Anillo superior, Anillo inferior, Diámetro [mm]: 45, Cantidad por eje: 1, Longitud [mm]: 451.284. Está construido con materiales de alta calidad, como acero resistente a la corrosión para el cuerpo del amortiguador y sellos duraderos para mantener el aceite de amortiguación sellado de forma segura. Utiliza un sistema de amortiguación hidráulica o de gas para controlar el movimiento de la suspensión y absorber los impactos. Este sistema está diseñado para proporcionar una conducción suave y confortable, así como un manejo seguro y estable.",
             images: [
                 'ridex-854s1739.jpg',
                 'ridex-854s1739-2.jpg',
@@ -118,7 +118,7 @@ export const initialData: SeedData = {
         },
 
         {
-            description: "Introducing the Tesla Turbine Collection. Designed for style, comfort and everyday lifestyle, the amortiguadores's Turbine Long Sleeve Tee features a subtle, water-based T logo on the left chest and our Tesla frenosrdmark below the back collar. The lightweight material is double-dyed, creating a soft, casual style for ideal wear in any season. Made from 50% cotton and 50% polyester.",
+            description: "El diseño del amortiguador ABAKUS 232-02-043 está optimizado para ofrecer un rendimiento consistente y duradero en una variedad de condiciones de conducción. Incorpora tecnología avanzada para garantizar una respuesta rápida a las irregularidades del terreno y una amortiguación efectiva de las vibraciones y oscilaciones del vehículo. Tipo de amortiguador: Presión de aceite, Sistema de amortiguadores: Bitubular, Tipo de sujeción de amortiguador: Anillo superior, Anillo inferior",
             images: [
                 'abakus-232-02-043.jpg',
                 'abakus-232-02-043-2.jpg',
@@ -134,7 +134,7 @@ export const initialData: SeedData = {
             category: 'amortiguadores'
         },
         {
-            description: "Introducing the Tesla Turbine Collection. Designed for style, comfort and everyday lifestyle, the amortiguadores's Turbine Short Sleeve Tee features a subtle, water-based Tesla frenosrdmark across the chest and our T logo below the back collar. The lightweight material is double-dyed, creating a soft, casual style for ideal wear in any season. Made from 50% cotton and 50% polyester.",
+            description: "Lado de montaje: Eje delantero, Tipo de amortiguador: Presión de gas, Sistema de amortiguadores: Bitubular, Tipo de amortiguador: Amortiguador telescópico, Tipo de sujeción de amortiguador: Anillo inferior, Espiga arriba, long. máx. [mm]: 480, long. mín. [mm]: 330, Diámetro del cilindro del pistón [mm]: 38.4",
             images: [
                 'ashika-ma-85522.jpg',
                 'ashika-ma-85522-2.jpg',
@@ -151,7 +151,7 @@ export const initialData: SeedData = {
             category: 'amortiguadores'
         },
         {
-            description: "Designed for comfort, the Cybertruck Owl Tee is made from 100% cotton and features our signature Cybertruck icon on the back.",
+            description: "Lado de montaje: Eje delantero,Altura [mm]: 26.8, Espesor de disco de frenos [mm]: 12.8, Diámetro de centrado [mm]: 68.4, Número de orificios: 4, corona de agujeros [mm]: 92.46, Espesor mínimo [mm]: 11.4, Diámetro interior [mm]: 118.1",
             images: [
                'ridex-82B0673.jpg',
                'ridex-82B0673-2.jpg',
@@ -168,7 +168,7 @@ export const initialData: SeedData = {
             category: 'frenos'
         },
         {
-            description: "Inspired by our fully integrated home solar and storage system, the Tesla Solar Roof Tee advocates for clean, sustainable energy wherever you go. Designed for fit, comfort and style, the tee features an aerial view of our seamless Solar Roof design on the front with our signature T logo above 'Solar Roof' on the back. Made from 100% Peruvian cotton.",
+            description: "Lado de montaje: Eje delantero, Altura [mm]: 44, Espesor de disco de frenos [mm]: 23, Diámetro de centrado [mm]: 64, Número de orificios: 4, Espesor mínimo [mm]: 21, Diámetro interior [mm]: 136",
             images: [
                 'ridex-82B1068.jpg',
                 'ridex-82B1068-2.jpg',
@@ -185,7 +185,7 @@ export const initialData: SeedData = {
             category: 'frenos'
         },
         {
-            description: "Inspired by the frenosrld’s most unlimited resource, the Let the Sun Shine Tee highlights our fully integrated home solar and storage system. Designed for fit, comfort and style, the tee features a sunset graphic along with our Tesla frenosrdmark on the front and our signature T logo printed above 'Solar Roof' on the back. Made from 100% Peruvian cotton.",
+            description: "Unidad de cantidad: Juego para eje, Lado de montaje: Eje delantero, Altura [mm]: 60, Espesor de disco de frenos [mm]: 17.5, Ancho [mm]: 131.6, Contacto avisador de desgaste: No preparado para indicador de desgaste",
             images: [
                 'ridex-402B0624.jpg',
                 'ridex-402B0624-2.jpg',

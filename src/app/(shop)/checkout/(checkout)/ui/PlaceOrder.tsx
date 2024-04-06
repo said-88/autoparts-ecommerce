@@ -100,13 +100,9 @@ export const PlaceOrder = () => {
           {/* Disclaimer */}
           <span className="text-xs">
             Al hacer clic en &quot;Aceptar orden&quot;, aceptas nuestros{" "}
-            <a href="#" className="underline">
+            <a target='_' href="https://drive.google.com/file/d/1eKD4Fh8Tol4G1Ka8CFRa7W1JxHUIwLvY/view?usp=sharing" className="underline">
               términos y condiciones
             </a>{" "}
-            y{" "}
-            <a href="#" className="underline">
-              política de privacidad
-            </a>
           </span>
         </p>
 
@@ -118,8 +114,8 @@ export const PlaceOrder = () => {
           onClick={onPlaceOrder}
           className={
             clsx({
-              'w-1/2 rounded flex justify-center mx-auto': true,
-              'bg-slate-300': !isPlacingOrder,
+              'w-1/2 h-8 rounded flex items-center justify-center mx-auto font-semibold': true,
+              'bg-slate-200': !isPlacingOrder,
               'btn-disabled': isPlacingOrder
             })
           }

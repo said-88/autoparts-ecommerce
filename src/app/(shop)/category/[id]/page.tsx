@@ -35,7 +35,6 @@ export default async function CategoryId({ params, searchParams }: Props) {
         <>
         <Title 
           title={`Artículos para ${labels[id]}`}
-          subtitle="This is the home page"
           className='mb-10'
         />
         <ProductGrid products={products} />
