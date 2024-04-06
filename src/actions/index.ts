@@ -16,3 +16,6 @@ export * from './address/delete-user-address';
 export * from './address/set-user-address';
 
 export * from './country/get-countries';
+
+export * from './payments/paypal-check-payment';
+export * from './payments/set-transaction-id';

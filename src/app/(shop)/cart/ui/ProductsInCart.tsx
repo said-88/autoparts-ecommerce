@@ -1,9 +1,8 @@
 'use client';
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { QuantitySelector } from "@/components";
+import { QuantitySelector, ProductImage } from "@/components";
 import { useCartStore } from "@/components/store";
-import { ProductImage } from "@/components/product/product-image/ProductImage";
 
 
 export const ProductsInCart = () => {

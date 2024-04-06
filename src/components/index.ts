@@ -17,7 +17,12 @@ export * from './products/product-grid/ProductGridItem';
 export * from './product/product-image/ProductImage';
 export * from './product/quantity-selector/QuantitySelector';
 export * from './product/slide-show/SlideShow';
+export * from './product/product-image/ProductImage';
 
 export * from './store'
 
-export * from './provider/Provider';
+export * from './providers/Providers';
+
+export * from './paypal/PayPalButton';
+
+export * from './orders/OrderStatus';
